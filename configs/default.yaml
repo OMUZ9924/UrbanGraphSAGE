@@ -1,0 +1,33 @@
+data:
+  train_path: data/processed/train/
+  val_path: data/processed/val/
+  test_path: data/processed/test/
+  num_classes: 2  # building vs non-building
+  input_channels: 22  # 13 bands + 3 indices + 6 stats
+
+model:
+  in_channels: 22
+  hidden_channels: 256
+  num_classes: 2
+  num_layers: 3
+  dropout: 0.3
+
+training:
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  patience: 15
+  min_delta: 0.0001
+  seed: 42
+
+preprocessing:
+  n_segments: 500
+  tile_size: 256
+  compactness: 20.0
+  k_neighbors: 8
+
+output:
+  checkpoint_dir: checkpoints/
+  log_dir: logs/
+  results_dir: results/
