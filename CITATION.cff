@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "UrbanGraphSAGE"
+abstract: "Graph Neural Network for urban building footprint extraction from Sentinel-2 satellite imagery."
+authors:
+  - family-names: "Arbouz"
+    given-names: "Maamar"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+type: software
+license: MIT
+repository-code: "https://github.com/OMUZ9924/UrbanGraphSAGE"
+keywords:
+  - graph-neural-network
+  - graphsage
+  - remote-sensing
+  - building-extraction
+  - sentinel-2
+  - geoai
